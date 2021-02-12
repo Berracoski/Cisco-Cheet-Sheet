@@ -39,12 +39,19 @@ When working with routers in particular, but also when dealing the management in
 For your router interfaces the following example will set speed, duplex and IP configuration information for the interface FastEthernet 0/0 (notice the interface reference as slot/port). In the case of the router, the interface is enabled using the no shutdown command in the final step; interfaces on switches are enabled by default.
 
 `Router1>enable
+
 Router1#configure terminal
+
 Router1(config)#interface FastEthernet0/0
+
 Router1(config-if)#description Private LAN
+
 Router1(config-if)#speed 100
+
 Router1(config-if)#duplex full
+
 Router1(config-if)#ip address 192.168.1.1 255.255.255.0
+
 Router1(config-if)#no shutdown`
 
 Configure a switch management interface for Cisco networking
